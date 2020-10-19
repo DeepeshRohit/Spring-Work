@@ -16,8 +16,11 @@
  		class=" springstart.TrackCoach">
 		<constructor-arg ref="myFortune"></constructor-arg>
 	</bean>
+	<bean id="myCricketCoach" class="springstart.CricketCoach">
+		<property name="fortuneService" ref="myFortune"></property>
+	</bean>
 
-    <!--
+	<!--
     <bean id="myCoach"
         class="springstart.TrackCoach">        <constructor-arg ref = "myFortune" />  
     </bean>
