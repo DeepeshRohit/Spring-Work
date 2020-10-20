@@ -10,7 +10,12 @@ public class SetterCoach {
 		
 		CricketCoach bc =  context.getBean("myCricketCoach",CricketCoach.class);
 		
+		System.out.println(bc.getEmailAddress());
+		
+		System.out.println(bc.getTeam());
+		
 		context.close();
+		
 	}
 
 }
